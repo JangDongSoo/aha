@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/genius/genius1.css" />
+    <link rel="stylesheet" href="../../css/genius/ox.css" />
+
+    <style>
+      .container {
+        background-color: rgb(240, 152, 171);
+      }
+
+      .form1 {
+        background-color: rgb(0, 155, 179);
+      }
+
+      .text-inner {
+        color: rgb(0, 106, 135);
+      }
+
+      .form2 {
+        background-color: rgb(240, 152, 171);
+      }
+
+      .form3 {
+        background-color: rgb(0, 106, 135);
+      }
+
+      .form4 {
+        border-bottom: 2.5px solid rgb(0, 106, 135);
+      }
+
+      .text2 {
+        background-color: rgb(240, 152, 171);
+      }
+
+      section {
+        background-color: rgb(240, 152, 171);
+      }
+
+      .hidden {
+        background-color: rgb(240, 152, 171);
+        color: rgb(240, 152, 171);
+        cursor: pointer;
+      }
+
+      /* ******************************************************************* */
+
+      .item {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .item1 {
+        left: 56px;
+        top: 357px;
+      }
+
+      .item2 {
+        left: 158px;
+        top: 357px;
+      }
+
+      .item3 {
+        left: 260px;
+        top: 357px;
+      }
+
+      .item4 {
+        left: 362px;
+        top: 357px;
+      }
+
+      /*************************/
+      /*     Media Queries     */
+      /*************************/
+      @media (max-width: 640px) {
+        .item {
+          width: 3rem;
+          height: 3rem;
+        }
+
+        .item1 {
+          left: 33px;
+          top: 260px;
+        }
+
+        .item2 {
+          left: 110px;
+          top: 260px;
+        }
+
+        .item3 {
+          left: 187px;
+          top: 260px;
+        }
+
+        .item4 {
+          left: 263px;
+          top: 260px;
+        }
+      }
+    </style>
+
+    <title>genius1_6</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="form1">통찰</div>
+        <div class="form2">달팽이 등껍질</div>
+      </header>
+      <div class="line">
+        <div class="form3">6</div>
+        <div class="form4"></div>
+      </div>
+      <section class="text">
+        <div class="text1"></div>
+
+        <div class="text2">
+          달팽이 등껍질이 없어졌어요.<br />
+          아래 그림 중 달팽이 등껍질을 찾아보세요.
+        </div>
+      </section>
+      <main class="content-area">
+        <div class="content">
+          <img
+            src="../../images/child/genius1-png/genius1- 06.png"
+            alt="Image"
+            class=""
+          />
+          <a
+            ><div class="card1 item1" id="card1">
+              <div class="hamburger" id="hamburger-1">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div></div
+          ></a>
+
+          <div class="card2 item2 success" id="btn">
+            <div class="hamburger" id="hamburger-21">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+
+          <div class="card3 item3" id="card3">
+            <div class="hamburger" id="hamburger-3">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+
+          <div class="card4 item4" id="card4">
+            <div class="hamburger" id="hamburger-4">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("is-active");
+
+          var clickedCard = $(this).parent().attr("id");
+
+          if (clickedCard === "btn") {
+            alert("정답입니다!");
+          } else {
+            alert("틀렸습니다!");
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,654 @@
+
+.hamburger .line{
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  opacity: 0;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-1 .line,
+#hamburger-2 .line,
+#hamburger-3 .line,
+#hamburger-4 .line,
+#hamburger-5 .line,
+#hamburger-6 .line,
+#hamburger-7 .line,
+#hamburger-8 .line,
+#hamburger-9 .line,
+#hamburger-10 .line,
+#hamburger-11 .line,
+#hamburger-12 .line,
+#hamburger-13 .line,
+#hamburger-14 .line,
+#hamburger-15 .line,
+#hamburger-16 .line,
+#hamburger-17 .line,
+#hamburger-18 .line,
+#hamburger-19 .line,
+#hamburger-20 .line,
+#hamburger-21 .line,
+#hamburger-22 .line,
+#hamburger-23 .line,
+#hamburger-24 .line,
+#hamburger-25 .line,
+#hamburger-26 .line,
+#hamburger-27 .line,
+#hamburger-28 .line,
+#hamburger-29 .line,
+#hamburger-30 .line {
+  background-color: #2c3e50;
+	opacity: 0;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+
+/* ONE */
+
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* two */
+
+#hamburger-2.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-2.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-2.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* three */
+
+#hamburger-3.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-3.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-3.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* four */
+
+#hamburger-4.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-4.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-4.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* five */
+
+#hamburger-5.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-5.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-5.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* six */
+
+#hamburger-6.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-6.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-6.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* seven */
+
+#hamburger-7.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-7.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-7.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* eight */
+
+#hamburger-8.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-8.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-8.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* nine */
+
+#hamburger-9.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-9.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-9.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* ten */
+
+#hamburger-10.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-10.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-10.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* eleven */
+
+#hamburger-11.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-11.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-11.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* twelve */
+
+#hamburger-12.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-12.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-12.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* thirteen */
+
+#hamburger-13.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-13.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-13.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* fourteen */
+
+#hamburger-14.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-14.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-14.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* fifteen */
+
+#hamburger-15.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-15.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-15.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* sixteen */
+
+#hamburger-16.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-16.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-16.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* seventeen */
+
+#hamburger-17.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-17.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-17.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* eighteen */
+
+#hamburger-18.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-18.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-18.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+
+/* nineteen */
+
+#hamburger-19.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-19.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-19.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+
+
+/* eighteen */
+
+#hamburger-20.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-20.is-active .line:nth-child(1){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-20.is-active .line:nth-child(3){
+  background-color: #ecf0f1;
+	opacity: 1;
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* ************************************************************************ */
+
+/* twenty-one */
+
+#hamburger-21{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-21:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-21.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+
+/* twenty-two */
+
+#hamburger-22{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-22:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-22.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+
+/* twenty-three */
+
+#hamburger-23{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-23:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-23.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+
+/* twenty-four */
+
+#hamburger-24{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-24:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-24.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+
+/* twenty-five */
+
+#hamburger-25{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-25:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-25.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+
+/* twenty-six */
+
+#hamburger-26{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-26:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-26.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+
+/* twenty-seven */
+
+#hamburger-27{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-27:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-27.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+
+/* twenty-eight */
+
+#hamburger-28{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-28:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-28.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+
+/* twenty-nine */
+
+#hamburger-29{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-29:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-29.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+
+/* thirty */
+
+#hamburger-30{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-30:before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-30.is-active:before{
+  border: 5px solid #ecf0f1;
+}
+

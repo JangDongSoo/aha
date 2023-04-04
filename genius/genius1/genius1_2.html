@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/genius/genius1.css" />
+    <link rel="stylesheet" href="../../css/genius/ox.css" />
+
+    <style>
+      .container {
+        margin-top: 5%;
+      }
+
+      .suramtitle {
+        margin-top: 10%;
+        margin-left: 13%;
+        background-color: aqua;
+      }
+
+      .image1 {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: calc((100% - 30px) / 3);
+        grid-gap: 10px;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .gallery-item {
+        overflow: hidden;
+        display: block;
+        text-align: center;
+        font-size: 90px;
+      }
+
+      .square {
+        width: 150px;
+        height: 150px;
+        border-radius: 5%;
+        background-color: aqua;
+        margin: 10px;
+      }
+
+      .square:hover {
+        background-color: pink;
+      }
+
+      .question-mark {
+        display: inline-block;
+        position: relative;
+        width: 120px;
+        height: 120px;
+
+        border: 2px solid #333;
+        border-radius: 50%;
+        font-size: 80px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .question-mark::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .question-mark:hover::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        animation: twinkling 1s linear infinite;
+      }
+
+      @keyframes twinkling {
+        0% {
+          box-shadow: 0 0 0 rgba(255, 255, 255, 0.5),
+            0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5),
+            0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5),
+            0 0 50px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.5);
+        }
+        100% {
+          box-shadow: 0 0 0 rgba(255, 255, 255, 0.5),
+            0 0 20px rgba(255, 255, 255, 0), 0 0 30px rgba(255, 255, 255, 0),
+            0 0 40px rgba(255, 255, 255, 0), 0 0 50px rgba(255, 255, 255, 0),
+            0 0 60px rgba(255, 255, 255, 0), 0 0 70px rgba(255, 255, 255, 0);
+        }
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .active1 {
+        background-color: red;
+      }
+
+      .active2 {
+        background-color: blue;
+      }
+
+      .active3 {
+        background-color: yellow;
+      }
+
+      .card1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .neon {
+        font-size: 5vw;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #fff;
+        letter-spacing: 0.1em;
+        background: linear-gradient(
+          to right,
+          rgb(0, 191, 255),
+          rgb(106, 227, 186),
+          cyan,
+          rgb(0, 255, 94)
+        );
+        animation: neon-animation 10s ease infinite;
+      }
+
+      @keyframes neon-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* 반응형 스타일 */
+      @media screen and (max-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(3, 1fr);
+          grid-auto-columns: calc((100% - 30px) / 3);
+          grid-auto-rows: calc((100% - 30px) / 3);
+        }
+
+        .square {
+          width: 100px;
+          height: 100px;
+          margin: 5px;
+        }
+
+        .gallery-item {
+          font-size: 80px;
+        }
+
+        .neon {
+          font-size: 10vw;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .gallery {
+          grid-template-columns: 1fr;
+          grid-auto-rows: auto;
+        }
+
+        .square {
+          width: 60px;
+          height: 60px;
+          margin: 3px;
+        }
+      }
+    </style>
+
+    <title>빙고판</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="suramtitle neon">
+          <span>아</span>
+          <span>하</span>
+          <span>북</span>
+          <span>1</span>
+          <span>-</span>
+          <span>①</span>
+        </div>
+      </header>
+      <div class="line">
+      </div>
+      <section class="text">
+        <div class="text1"></div>
+
+      </section>
+      <main class="content-area">
+        <div class="content">
+          <div class="gallery">
+            <a href="genius1_6.html" target="_blank" class="gallery-item">
+              <div class="square question-mark" onclick="changeColor(this)">
+                ?
+              </div>
+            </a>
+            <a href="genius1_7.html" target="_blank" class="gallery-item">
+              <div class="square question-mark" onclick="changeColor(this)">
+                ?
+              </div>
+            </a>
+            <a href="genius1_8.html" target="_blank" class="gallery-item">
+              <div class="square question-mark" onclick="changeColor(this)">
+                ?
+              </div>
+            </a>
+            <a href="genius1_9.html" target="_blank" class="gallery-item">
+              <div class="square question-mark" onclick="changeColor(this)">
+                ?
+              </div>
+            </a>
+            <a href="genius1_10.html" target="_blank" class="gallery-item">
+              <div class="square question-mark" onclick="changeColor(this)">
+                ?
+              </div>
+            </a>
+            <a href="genius1_11.html" target="_blank" class="gallery-item">
+              <div class="square question-mark" onclick="changeColor(this)">
+                ?
+              </div>
+            </a>
+            <a href="genius1_12.html" target="_blank" class="gallery-item">
+              <div class="square question-mark" onclick="changeColor(this)">
+                ?
+              </div>
+            </a>
+            <a href="genius1_13.html" target="_blank" class="gallery-item">
+              <div class="square question-mark" onclick="changeColor(this)">
+                ?
+              </div>
+            </a>
+            <a href="genius1_14.html" target="_blank" class="gallery-item">
+              <div class="square question-mark" onclick="changeColor(this)">
+                ?
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+      <section>
+        <div class="buttonArea">
+          <a href="genius1_1.html" class="nextPrevious previous"
+            >&laquo; 나가기</a
+          >
+          <a href="genius1_1.html" class="nextPrevious next">다음 &raquo;</a>
+        </div>
+      </section>
+    </div>
+    <script>
+      function changeColor(square) {
+        switch (square) {
+          case document.querySelectorAll(".square")[0]:
+            square.classList.toggle("active1");
+            break;
+          case document.querySelectorAll(".square")[1]:
+            square.classList.toggle("active2");
+            break;
+          case document.querySelectorAll(".square")[2]:
+            square.classList.toggle("active3");
+            break;
+          case document.querySelectorAll(".square")[3]:
+            square.classList.toggle("active1");
+            break;
+          case document.querySelectorAll(".square")[4]:
+            square.classList.toggle("active3");
+            break;
+          case document.querySelectorAll(".square")[5]:
+            square.classList.toggle("active1");
+            break;
+          case document.querySelectorAll(".square")[6]:
+            square.classList.toggle("active3");
+            break;
+          case document.querySelectorAll(".square")[7]:
+            square.classList.toggle("active2");
+            break;
+          case document.querySelectorAll(".square")[8]:
+            square.classList.toggle("active2");
+            break;
+        }
+
+        if (square.innerHTML == "?") {
+          square.innerHTML = "";
+        } else {
+          square.innerHTML = "";
+        }
+      }
+
+      const squares = document.querySelectorAll(".square");
+      const square2 = squares[2];
+      const square4 = squares[4];
+      const square6 = squares[6];
+
+      function checkSquaresClicked() {
+        var square2Clicked = false;
+        var square4Clicked = false;
+        var square6Clicked = false;
+
+        square2.addEventListener("click", function () {
+          square2Clicked = true;
+          checkAllSquaresClicked();
+        });
+
+        square4.addEventListener("click", function () {
+          square4Clicked = true;
+          checkAllSquaresClicked();
+        });
+
+        square6.addEventListener("click", function () {
+          square6Clicked = true;
+          checkAllSquaresClicked();
+        });
+
+        function checkAllSquaresClicked() {
+          if (square2Clicked && square4Clicked && square6Clicked) {
+            setTimeout(goToPage, 3000); 
+          }
+        }
+      }
+
+      function goToPage() {
+        window.open("game1.html", "_blank");
+      }
+
+      checkSquaresClicked();
+    </script>
+  </body>
+</html>

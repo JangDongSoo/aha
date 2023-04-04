@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/genius/select.css" />
+
+    <title>genius1_14</title>
+    <style>
+      .card1 {
+        width: 5.6rem;
+        height: 5.6rem;
+        left: 53px;
+        top: 372px;
+      }
+
+      #sel1 img {
+        top: -372px;
+        left: -52px;
+      }
+
+      .card2 {
+        width: 5.6rem;
+        height: 5.6rem;
+        left: 153px;
+        top: 372px;
+      }
+
+      #sel2 img {
+        top: -372px;
+        left: -153px;
+      }
+
+      .card3 {
+        width: 5.6rem;
+        height: 5.6rem;
+        left: 251px;
+        top: 372px;
+      }
+
+      #sel3 img {
+        top: -372px;
+        left: -250px;
+      }
+
+      .card4 {
+        width: 5.6rem;
+        height: 5.6rem;
+        left: 352px;
+        top: 372px;
+      }
+
+      #sel4 img {
+        top: -372px;
+        left: -349.5px;
+      }
+
+      .card5 {
+        width: 5.6rem;
+        height: 5.6rem;
+        /* border: 1px solid springgreen; */
+      }
+
+      .item {
+        cursor: pointer;
+      }
+
+      .item5 {
+        left: 169px;
+        top: 119px;
+      }
+
+      /*************************/
+      /*     Media Queries     */
+      /*************************/
+      @media (max-width: 640px) {
+        .item {
+          width: 4rem;
+          height: 5rem;
+        }
+
+        .item1 {
+          left: 26px;
+          top: 267px;
+        }
+
+        .item2 {
+          left: 103px;
+          top: 267px;
+        }
+
+        .item3 {
+          left: 180px;
+          top: 267px;
+        }
+
+        .item4 {
+          left: 256px;
+          top: 267px;
+        }
+
+        .hidden {
+          font-size: 0.4rem;
+          /* margin-top: 20px; */
+          /* border: 1px solid springgreen; */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="form1">통찰</div>
+        <div class="form2">조각을 찾아요</div>
+      </header>
+      <div class="line">
+        <div class="form3">14</div>
+        <div class="form4"></div>
+      </div>
+      <section class="text">
+        <div class="text1"></div>
+
+        <div class="text2">
+          토끼가 당근을 바구니에 담고 있어요.<br />
+          떨어져 나간 조각을 찾아보세요.
+        </div>
+      </section>
+      <main class="content-area">
+        <div class="content">
+          <img
+            src="../../images/child/genius1-png/genius1- 14.png"
+            alt="Image"
+          />
+
+          <div
+            id="sel1"
+            class="card1 item1 drag-01"
+            style="
+              transform: translate3d(0px, 0px, 0px);
+              cursor: move;
+              touch-action: none;
+              user-select: none;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="../../images/child/genius1-png/genius1- 14.png"
+              alt="Image"
+              class=""
+            />
+          </div>
+
+          <div
+            id="sel2"
+            class="card2 item2 drag-02"
+            style="
+              transform: translate3d(0px, 0px, 0px);
+              cursor: move;
+              touch-action: none;
+              user-select: none;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="../../images/child/genius1-png/genius1- 14.png"
+              alt="Image"
+              class=""
+            />
+          </div>
+
+          <div
+            id="sel3"
+            class="card3 item3 drag-03"
+            style="
+              transform: translate3d(0px, 0px, 0px);
+              cursor: move;
+              touch-action: none;
+              user-select: none;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="../../images/child/genius1-png/genius1- 14.png"
+              alt="Image"
+              class=""
+            />
+          </div>
+
+          <div
+            id="sel4"
+            class="card4 item4 drag-04"
+            style="
+              transform: translate3d(0px, 0px, 0px);
+              cursor: move;
+              touch-action: none;
+              user-select: none;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="../../images/child/genius1-png/genius1- 14.png"
+              alt="Image"
+              class=""
+            />
+          </div>
+
+          <div id="sel5" class="card5 item5 hit-01"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../../js/sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/utils/Draggable.min.js"></script>
+    <script>
+      var score = 0;
+
+      function updateScore() {
+        score = score + 1;
+        // console.log(score);
+        if (score === 1) {
+          //================ game over
+          alert("참 잘했어요!");
+        }
+      }
+
+      Draggable.create(".drag-01", {
+        onDrag: function () {
+          if (this.hitTest(".hit-01")) {
+            TweenLite.to(this.target, 1, { x: 0, y: 0 });
+          }
+        },
+      });
+
+      Draggable.create(".drag-02", {
+        onDrag: function () {
+          if (this.hitTest(".hit-01")) {
+            TweenLite.to(this.target, 1, { x: 0, y: 0 });
+          }
+        },
+      });
+
+      Draggable.create(".drag-03", {
+        onDrag: function () {
+          if (this.hitTest(".hit-01")) {
+            Draggable.get(this.target).disable();
+            updateScore();
+            TweenLite.to(this.target, 1, { x: -83, y: -252 });
+          }
+        },
+      });
+
+      Draggable.create(".drag-04", {
+        onDrag: function () {
+          if (this.hitTest(".hit-01")) {
+            TweenLite.to(this.target, 1, { x: 0, y: 0 });
+          }
+        },
+      });
+    </script>
+  </body>
+</html>

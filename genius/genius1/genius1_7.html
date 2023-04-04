@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/genius/genius1.css" />
+    <link rel="stylesheet" href="../../css/genius/ox.css" />
+
+    <style>
+      .item1 {
+        left: 68px;
+        top: 358px;
+      }
+
+      .item2 {
+        left: 169px;
+        top: 358px;
+      }
+
+      .item3 {
+        left: 270px;
+        top: 358px;
+      }
+
+      .item4 {
+        left: 372px;
+        top: 358px;
+      }
+
+      /*************************/
+      /*     Media Queries     */
+      /*************************/
+      @media (max-width: 640px) {
+        .item1 {
+          left: 42px;
+          top: 262px;
+        }
+
+        .item2 {
+          left: 119px;
+          top: 262px;
+        }
+
+        .item3 {
+          left: 196px;
+          top: 262px;
+        }
+
+        .item4 {
+          left: 272px;
+          top: 262px;
+        }
+      }
+    </style>
+
+    <title>genius1_7</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="form1">통찰</div>
+        <div class="form2">거북이 등껍질</div>
+      </header>
+      <div class="line">
+        <div class="form3">7</div>
+        <div class="form4"></div>
+      </div>
+      <section class="text">
+        <div class="text1"></div>
+
+        <div class="text2">
+          거북이 등껍질이 없어졌어요.<br />
+          아래 그림 중 거북이 등껍질을 찾아보세요.
+        </div>
+      </section>
+      <main class="content-area">
+        <div class="content">
+          <img
+            src="../../images/child/genius1-png/genius1- 07.png"
+            alt="Image"
+            class=""
+          />
+          <div class="card1 item1" id="card1">
+            <div class="hamburger" id="hamburger-1">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+
+          <div class="card2 item2" id="card2">
+            <div class="hamburger" id="hamburger-2">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+
+          <div class="card3 item3" id="card3">
+            <div class="hamburger" id="hamburger-3">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+
+          <div class="card4 item4 success" id="btn">
+            <div class="hamburger" id="hamburger-21">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("is-active");
+
+          var clickedCard = $(this).parent().attr("id");
+
+          if (clickedCard === "btn") {
+            alert("정답입니다!");
+          } else {
+            alert("틀렸습니다!");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
